@@ -43,7 +43,7 @@ public class StudentController {
 		@GetMapping("/students/city/{city}")
 		List<Student> getStudentsByCity(String city) throws StudentNotFoundException{
 			// TODO Auto-generated method stub
-			return  studentService.findByAddressCity(city);
+			return  studentService.getStudentsByCity(city);
 		}
 
 		@GetMapping("/students/dep/{dep}")

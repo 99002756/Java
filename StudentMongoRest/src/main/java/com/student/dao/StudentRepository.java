@@ -12,7 +12,7 @@ public interface StudentRepository extends MongoRepository<Student,Integer>{
 	List<Student> findStudentsByDept(String dep);
 	
 	
-	@Query("from Student b where b.age>?20")
+	//@Query("from Student b where b.age>?20")
 	List<Student> findByAge(int age);
 
 }
