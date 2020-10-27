@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import com.student.dao.StudentRepository;
 import com.student.exception.StudentNotFoundException;
 import com.student.model.Student;
 @Service
+@Repository
 public class StudentServiceImpl implements StudentService{
 	@Autowired
 	StudentRepository studentRepository;
