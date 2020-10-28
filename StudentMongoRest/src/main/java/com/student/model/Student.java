@@ -1,11 +1,13 @@
 package com.student.model;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Component;
-@component
+@Component
 @Document(collection="student")
 @TypeAlias("student")
 public class Student {

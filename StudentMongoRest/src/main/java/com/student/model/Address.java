@@ -7,6 +7,11 @@ public class Address {
 	String city;
 	String state;
 
+	
+	
+	public Address() {
+		// TODO Auto-generated constructor stub
+	}
 	public Address(String city, String state) {
 		super();
 		this.city = city;
@@ -34,8 +39,6 @@ public class Address {
 		this.state = state;
 	}
 
-	public Address() {
-		// TODO Auto-generated constructor stub
-	}
+	
 
 }

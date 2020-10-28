@@ -49,7 +49,7 @@ public class StudentServiceImpl implements StudentService{
 	@Override
 	public List<Student> getStudentsByDept(String dep) throws StudentNotFoundException{
 		// TODO Auto-generated method stub
-		return studentRepository. findStudentsByDept(dep);
+		return studentRepository. findStudentsByDep(dep);
 	}
 
 	@Override

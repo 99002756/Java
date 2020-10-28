@@ -3,6 +3,7 @@ package com.student.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,6 +28,13 @@ public class StudentController {
 		{
 			return studentService.addStudent(student);
 		}
+		
+		
+		@GetMapping("/students")
+	    List<Student> getAllStudents(){
+	        List<Student> studentList =  studentService.getAllStudents();
+	        return studentList;
+	    }
 		
 		@DeleteMapping("/students/delete-one/{studentId}")
 		boolean deleteStudent(@PathVariable("studentId")Integer studentid) throws StudentNotFoundException{
@@ -60,4 +68,3 @@ public class StudentController {
 
 		
 	}
-
